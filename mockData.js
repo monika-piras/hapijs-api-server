@@ -259,7 +259,7 @@ const PRODUCT_LIST_MOCK = [
         category: "technology",
         condition: true,
         description: "...................................",
-        image: "https://picsum.photos/400/400/?image=20"
+        image: "/img/photo.jpg"
     },
     {
         id: 10,
@@ -267,7 +267,7 @@ const PRODUCT_LIST_MOCK = [
         category: "technology",
         condition: true,
         description: "........................................",
-        image: "https://picsum.photos/400/400/?image=20"
+        image: "/img/photo.jpg"
     },
     {
         id: 11,
@@ -275,7 +275,7 @@ const PRODUCT_LIST_MOCK = [
         category: "technology",
         condition: true,
         description: "..........................................",
-        image: "https://picsum.photos/400/400/?image=20"
+        image: "/img/photo.jpg"
     }
 
 ];

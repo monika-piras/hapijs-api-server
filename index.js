@@ -34,7 +34,6 @@ const init = async () => {
         method: 'GET',
         path: '/users',
         options:{
-            // cors: true,
           cors:  {
                 origin: ['http://localhost:8080'] // an array of origins or 'ignore'           
             }
