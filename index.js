@@ -18,6 +18,11 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/products',
+        options:{
+            cors: {
+                origin: ['http://localhost:8080'] // an array of origins or 'ignore'           
+            }
+        },
         handler: (request, h) => {
             return {
                 list: MOCK_DATA.PRODUCTS
@@ -28,6 +33,12 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/users',
+        options:{
+            // cors: true,
+          cors:  {
+                origin: ['http://localhost:8080'] // an array of origins or 'ignore'           
+            }
+        },
         handler: (request, h) => {
             return {
                 list: MOCK_DATA.USERS
