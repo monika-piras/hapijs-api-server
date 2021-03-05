@@ -18,9 +18,9 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/products',
-        options:{
+        options: {
             cors: {
-                origin: ['http://localhost:8080'] // an array of origins or 'ignore'           
+                origin: ['http://localhost:8080']            
             }
         },
         handler: (request, h) => {
@@ -33,9 +33,9 @@ const init = async () => {
     server.route({
         method: 'GET',
         path: '/users',
-        options:{
-          cors:  {
-                origin: ['http://localhost:8080'] // an array of origins or 'ignore'           
+        options: {
+            cors: {
+                origin: ['http://localhost:8080']            
             }
         },
         handler: (request, h) => {
