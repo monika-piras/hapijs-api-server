@@ -7,12 +7,21 @@ var MOCK_DATA = require("./mockData");
 const init = async () => {
 
     const server = Hapi.server({
-        port: 3000,
+        port:  3000,
         host: 'localhost'
     });
 
     await server.register({
         plugin: require('inert')
+    });
+
+    server.route({
+        method: 'GET',
+        path:'/',
+        handler: (request, h) => {
+    
+          return 'Hello World!';
+        }
     });
 
     server.route({
