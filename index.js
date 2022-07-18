@@ -7,7 +7,7 @@ var MOCK_DATA = require("./mockData");
 const init = async () => {
 
     const server = Hapi.server({
-        port:  3000,
+        port:  process.env.PORT || 3000,
         host: 'localhost'
     });
 
