@@ -8,7 +8,7 @@ const init = async () => {
 
     const server = Hapi.server({
         port:  process.env.PORT || 3000,
-        host: 'localhost' || '0.0.0.0'  
+        host: '0.0.0.0' && 'localhost'    
     });
 
     await server.register({
@@ -20,7 +20,9 @@ const init = async () => {
         path:'/',
         handler: (request, h) => {
     
-          return `<p><a href="/products">Products</a></p> </br> <p><a href="/users">Users</a></p> `;
+          return `<p><a href="/products">Products</a></p> </br> 
+          <p><a href="/users">Users</a></p> </br>
+          <p><a href="/img">Images</a></p>`;
         }
     });
 
